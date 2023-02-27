@@ -1,4 +1,4 @@
-const maxNumOfQuestions = 1;
+const maxNumOfQuestions = 5;
 let questionIndex;
 let score;
 let questions = [];
@@ -71,7 +71,8 @@ answerElement.forEach(element => {
         else
         {
             sessionStorage.setItem("score", score);
-            window.location.assign("/Bootcamp-FED-Task/results.html");
+            sessionStorage.setItem("maxNumOfQuestions", maxNumOfQuestions);
+            return window.location.assign("https://davis-dabols.github.io/Bootcamp-FED-Task/results.html");
         }
     });
 });
