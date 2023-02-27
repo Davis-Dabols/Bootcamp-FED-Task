@@ -71,7 +71,7 @@ answerElement.forEach(element => {
         else
         {
             sessionStorage.setItem("score", score);
-            window.location.assign("/results.html");
+            window.location.assign("/Bootcamp-FED-Task/results.html");
         }
     });
 });
